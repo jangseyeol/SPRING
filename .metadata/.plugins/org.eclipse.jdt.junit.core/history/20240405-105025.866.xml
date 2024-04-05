@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MybatisTest.testGetTime2" project="SampleTest2" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testcase name="testGetTime2" classname="kr.com.ezen.persistence.MybatisTest" time="0.213"/>
+</testrun>

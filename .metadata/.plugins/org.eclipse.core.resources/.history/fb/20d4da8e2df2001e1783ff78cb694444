@@ -1,0 +1,11 @@
+package kr.com.ezen.persistence;
+
+import javax.sql.DataSource;
+
+import lombok.extern.log4j.Log4j;
+
+@Log4j
+public class DataSourceTests {
+
+	private DataSource dataSource;
+}

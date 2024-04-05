@@ -1,0 +1,14 @@
+package com.ezen.jang.persistence;
+
+import org.springframework.test.context.ContextConfiguration;
+
+import com.ezen.jang.mapper.MemberMapper;
+
+import lombok.extern.log4j.Log4j;
+
+@ContextConfiguration("file:src/main/webapp/WEB-INF/spring/root-context.xml")
+@Log4j
+public class MapperTests {
+
+	private MemberMapper memberMapper;
+}

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MemberMapperTest.testInsert" project="SampleTest2" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testcase name="testInsert" classname="kr.com.ezen.mapper.MemberMapperTest" time="0.149"/>
+</testrun>

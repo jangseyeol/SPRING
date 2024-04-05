@@ -1,0 +1,10 @@
+package com.jang.ezen2.persistence;
+
+public class JDBCTests {
+	
+	static {
+		try {
+			
+		}
+	}
+}

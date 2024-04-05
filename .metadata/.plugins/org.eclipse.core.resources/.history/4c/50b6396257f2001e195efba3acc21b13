@@ -1,0 +1,9 @@
+package com.jang.ezen.mapper;
+
+import com.jang.ezen.dto.StartMemberVO;
+
+public interface StartMemberMapper {
+	public String getTime();
+	
+	public int insertMember(StartMemberVO vo);
+}

@@ -1,0 +1,9 @@
+package jang.ezen.test;
+
+public interface testInterface {
+	int insertMember(MemberVO vo);
+	
+	MemberVO selectMemberOne(int id);
+
+
+}

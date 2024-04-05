@@ -1,0 +1,44 @@
+package com.jang.ezen2.persistence;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import com.jang.ezen2.dto.MemberVO;
+import com.jang.ezen2.mapper.SecondMemberMapper;
+
+import lombok.extern.log4j.Log4j;
+
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration("file:src/main/webapp/WEB-INF/spring/root-context.xml")
+@Log4j
+public class MapperTests {
+
+	@Autowired
+	private SecondMemberMapper secondmemberMapper;
+	
+	@Test
+	public void testGetTime() {
+		log.info(secondmemberMapper.getClass().getName());
+		log.info(secondmemberMapper.getTime());
+			
+	}
+	
+	
+	public void testInsert() {
+		MemberVO vo = MemberVO.builder()
+				.id(5)
+				.name("장세열")
+				.phone("010-1234-5678")
+				.address("경기도 화성시 봉담읍")
+				.build();
+		secondmemberMapper.insertMember(vo);
+	}
+	
+	public void testUpdate() {
+		MemberVO vo = MemberVO.builder()
+				
+	}
+}

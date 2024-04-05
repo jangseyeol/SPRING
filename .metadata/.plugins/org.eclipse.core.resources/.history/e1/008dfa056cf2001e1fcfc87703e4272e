@@ -1,0 +1,5 @@
+package com.ezen.jang.persistence;
+
+public class JDBCTests {
+
+}

@@ -1,0 +1,40 @@
+package jang.ezen.test;
+
+import java.io.InputStream;
+
+import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+
+public class test {
+
+	public static void main(String[] args) {
+	
+		try {
+		String resource = "jang/ezen/test/mybatis-config.xml";
+		InputStream inputStream = Resources.getResourceAsStream(resource);
+		SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+		
+		SqlSession session = sqlSessionFactory.openSession(true);
+			  		
+		testInterface mapper = session.getMapper(testInterface.class);
+		
+		MemberVO vo = new MemberVO();
+		
+		vo.setId(1);
+		vo.setName("장세열");
+		vo.setPhone("010-1234-5678");
+		vo.setAddress("경기도 화성시");
+		
+		//mapper.insertMember(vo);
+		
+		vo = mapper.selectMemberOne(1);
+		
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+}

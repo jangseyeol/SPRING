@@ -1,0 +1,14 @@
+package jang.ezen.test;
+
+import java.util.List;
+
+public interface testInterface {
+	int insertMember(MemberVO vo);
+	int updateMember(MemberVO vo);
+	
+	MemberVO selectMemberOne(int id);
+
+	List<MemberVO> selectMemberList();
+	
+
+}

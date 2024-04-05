@@ -1,0 +1,13 @@
+package com.ezen.jang.mapper;
+
+import com.ezen.jang.dto.MemberVO;
+
+public interface MemberMapper {
+	public String getTime();
+	
+	public int insertMember(MemberVO vo);
+	public int updateMember(MemberVO vo);
+	public int deleteMember(int id);
+	
+	public MemberVO selectOneMember(int id);
+}

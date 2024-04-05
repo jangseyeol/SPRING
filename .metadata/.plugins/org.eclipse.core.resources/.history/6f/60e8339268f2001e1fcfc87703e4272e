@@ -1,0 +1,5 @@
+package com.jang.ezen2.mapper;
+
+public interface SecondMemberMapper {
+	public String getTime();
+}

@@ -1,0 +1,6 @@
+package com.ezen.jang.persistence;
+
+public class MapperTests {
+
+	private MemberMapper memberMapper;
+}

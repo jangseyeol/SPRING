@@ -1,0 +1,5 @@
+package com.jang.ezen2.dto;
+
+public class MemberVO {
+
+}

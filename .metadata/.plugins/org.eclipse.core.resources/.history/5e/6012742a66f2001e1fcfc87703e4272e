@@ -1,0 +1,13 @@
+package com.jang.ezen2.persistence;
+
+import javax.sql.DataSource;
+
+public class DataSourceTests {
+
+	private DataSource dataSource;
+	
+	public void testConnection() {
+		log.info(dataSource)
+	}
+	
+}

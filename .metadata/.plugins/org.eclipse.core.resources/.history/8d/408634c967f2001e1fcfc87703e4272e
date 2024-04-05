@@ -1,0 +1,12 @@
+package com.jang.ezen2.persistence;
+
+import com.jang.ezen2.mapper.SecondMemberMapper;
+
+public class MapperTests {
+
+	private SecondMemberMapper secondmemberMapper;
+	
+	public void testGetTime() {
+		
+	}
+}
